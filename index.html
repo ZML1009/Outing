@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>今日校园</title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/mystyle.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+	</head>
+	<body>
+		<div class="one">
+			<a href="qingjia.html"><span class="iconfont icon-fanhui2 fanhui"></span></a>
+			<p class="hei">
+			<span class="iconfont icon--zaixianweishi">&nbsp;</span>请假详情</p>
+		</div>
+		
+		
+		
+		<div class="two">
+			<p class="ct"><span class="iconfont icon-qipaowenhao tian"></span>&nbsp;&nbsp;如何销假?&nbsp;<span class="iconfont icon-youjiantou tian"></span></p>
+		</div>
+		
+		
+		
+		<div class="three">
+			<p class="ct a"><span class="iconfont icon-duihao1"></span>审批已通过</p>
+			<p class="ct b">正在休假中</p>
+					
+			<div id="div1">
+				<ul id="ul1">
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>
+					<li><span class="iconfont icon-pinghangsibianxing"></span></li>				</ul>
+			</div>
+			
+			<div class="date">
+				<p id="id1"></p>
+			</div>
+		</div>
+
+		<div class="four">
+			<div class="four_1">
+				<span class="hui">请假类型： </span><span>事假</span><span class="hui right">需要离校： </span><span>离校</span>
+			</div>
+			<div class="four_2">
+				<span class="hui">销假规则： </span><span class="yellow">离校、非离校请假需要销假 </span><span class="blue"> 查看 ></span>
+			</div>
+			<div class="four_3">
+				<span class="hui">实际休假时间：-</span>
+			</div>
+		</div>
+		<div class="five">
+			<span class="hui">请假详情</span>
+		</div>
+		<div class="six">
+			<p class="item hei">我的 请假申请</p>
+			<div class="item">
+				<span class="hui c">开始时间：</span><span id="start">2020.10.30</span>
+			</div>
+			<div class="item">
+				<span class="hui c">结束时间：</span><span id="end">2020.10.30</span>
+			</div>
+			<div class="item">
+				<span class="hui c">审批流程：</span><span>共1步 </span><span class="blue">查看></span>
+			</div>
+			<div class="item">
+				<span class="hui c">紧急联系人：</span><span id="number">15617967886</span>
+			</div>
+			<div class="item">
+				<span class="hui c">请假原因：</span><span>需要外出购买必需品，望批准。</span>
+			</div>
+			<div class="item top">
+				<span class="hui c">发起位置：</span><span class="blue">河南省郑州市新郑市朴实路</span>
+			</div>
+			<div class="item">
+				<span class="hui c">抄送人：</span><span>无</span>
+			</div>
+			
+			
+		</div>
+<div class="seven">
+				
+			</div>
+		<div class="eight">
+			<p class="spzt hei">审批状态</p>
+			<div class="item">
+				<span class="hui"><span class="lan">◯</span><span id="name">陈晓</span> - 发起申请</span><span class="right hui" id="sp_start">10-18 12:00</span>
+			</div>
+			<div class="item">
+				<span class="hui"><span class="lv">◯</span>一级：[辅导员]<span id="daoyuan">王保进</span> - 审批</span><span class="pass">通过</span><span class="right hui" id="sp_end">10-18 12:00</span>
+			</div>
+			<div class="spyj">
+				<p>审批意见：无</p>
+			</div>
+		</div>
+		<div class="nine">
+			<div class="xiaojia" onclick="a();"><p>去销假</p></div>
+			<div class="xujia" onclick="b();"><p>申请销假</p></div>
+			<div class="zhuanfa" onclick="c();"><p>转发</p></div>
+		</div>
+		
+		<script>
+		    var a = function(){
+		        var x = prompt ("输入姓名: ", "陈晓");/*第一个变量为提示语，第二个变量为默认初始值*/
+				var name = document.getElementById('name');
+		        name.innerHTML = x;
+		    }
+			var b = function(){
+			    var y = prompt ("输入导员名字: ", "王保进");/*第一个变量为提示语，第二个变量为默认初始值*/
+				var daoyuan = document.getElementById('daoyuan');
+			    daoyuan.innerHTML = y;
+			}
+			var c = function(){
+			    var z = prompt ("输入联系电话: ", "15617967886");/*第一个变量为提示语，第二个变量为默认初始值*/
+				var Number = document.getElementById('number');
+			    Number.innerHTML = z;
+			}
+		</script>
+		<script type="text/javascript" src="js/myjs.js"></script>
+	</body>
+</html>
